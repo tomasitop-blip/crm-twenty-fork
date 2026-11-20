@@ -127,9 +127,10 @@ docker buildx build \
 cd /docker/twenty && docker compose up -d
 ```
 
-`docker-compose.yml` currently sets `pull_policy: never` on `server`/`worker` so a plain
-`up` cannot silently replace the local image with the stale registry image. Revert that
-to `always` only after the GHCR pipeline is publishing again.
+As of 2026-11-20 the GHCR pipeline is healthy again and `docker-compose.yml` is back to
+`pull_policy: always`. The local-build procedure above is only a fallback for when
+Actions or package publishing are broken; if you use it temporarily, switch
+`pull_policy` to `never` while the local image is in place, then restore `always`.
 
 Record the running digest before a redeploy so rollback is possible:
 
