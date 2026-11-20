@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.8.0
+
+- Add a **Bump last contact** widget to the People record page. Pick Text, Email, WhatsApp or Call, then bump: Last contact and Last outbound move to now, Last contact by becomes the acting teammate, and the new Last contact method field records the channel. Manual bumps are future-dated relative to older synced emails and meetings, so later syncs do not overwrite them.
+- Add the Last contact method select field on People.
+
 ## 1.7.0
 
 - Keep the app's fields off the record timeline. The app's fields are frequently rewritten during email and meeting syncs, and each write used to add an `updated Last contact` entry to the person, company or opportunity timeline, burying everything else. All 23 fields now declare `isAuditLogged: false`, so their values still update but no timeline activity is recorded for them. Entries written before this version stay on the timeline.

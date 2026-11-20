@@ -7,6 +7,7 @@
 - **Live columns on People, Companies and Opportunities** — last contact, who reached out (you or them), the owning teammate, and the exact email or meeting behind it
 - **Zero upkeep** — updates in real time from every synced email and meeting, with your full history backfilled the moment you install
 - **Follow-ups made obvious** — sort by recency to catch cold relationships and see who owes whom a reply
+- **Manual bumps** — a Bump last contact widget on each person's record page logs a touch you made outside the synced mailbox: choose Text, Email, WhatsApp or Call, and the last-contact fields update immediately
 
 ## 📊 The columns
 

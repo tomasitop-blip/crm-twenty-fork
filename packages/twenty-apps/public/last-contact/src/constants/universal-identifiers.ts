@@ -1,10 +1,24 @@
 export const APP_DISPLAY_NAME = 'Last contact';
 export const APP_DESCRIPTION =
-  'Know where every relationship stands. Adds Last contact, Last outbound, Last inbound, Last contact by, and the last email and meeting to People, plus Last contact on Companies and Opportunities, kept up to date automatically from your synced emails and meetings.';
+  'Know where every relationship stands. Adds Last contact, Last outbound, Last inbound, Last contact by, Last contact method, and the last email and meeting to People, plus Last contact on Companies and Opportunities, kept up to date automatically from your synced emails and meetings and manually from the Bump last contact widget.';
 export const APPLICATION_UNIVERSAL_IDENTIFIER = '66a504cc-0a75-410e-a43f-cdeae1db1522';
 export const DEFAULT_ROLE_UNIVERSAL_IDENTIFIER = '34187abe-1b98-4153-85cd-4808e0aebf30';
 export const LAST_CONTACT_AT_FIELD_UNIVERSAL_IDENTIFIER =
   '4e0fd7ff-0bbc-47b2-baab-5fe2c0d12557';
+export const LAST_CONTACT_METHOD_FIELD_UNIVERSAL_IDENTIFIER =
+  '210d5ed1-8f61-4f83-bcdf-e87c3589beaa';
+export const LAST_CONTACT_METHOD_TEXT_OPTION_ID =
+  'effbf2aa-1578-4868-ba79-f3207f1b4809';
+export const LAST_CONTACT_METHOD_EMAIL_OPTION_ID =
+  '50ea07d9-15eb-4bcc-b9e1-79b9a76d63a8';
+export const LAST_CONTACT_METHOD_WHATSAPP_OPTION_ID =
+  '8f27d1bf-688f-42cc-909c-6be9efb2032b';
+export const LAST_CONTACT_METHOD_CALL_OPTION_ID =
+  'c94b3c2f-d93f-4519-80ac-c762775eef8c';
+export const BUMP_LAST_CONTACT_FRONT_COMPONENT_UNIVERSAL_IDENTIFIER =
+  '892fcf6c-594f-40f8-913d-9d84ec312ee9';
+export const BUMP_LAST_CONTACT_PAGE_LAYOUT_WIDGET_UNIVERSAL_IDENTIFIER =
+  '00807893-c8de-4530-9925-94f5c4def155';
 export const EMAIL_INTERACTION_LOGIC_FUNCTION_UNIVERSAL_IDENTIFIER =
   '87c8926b-15e3-43ed-a303-60f6d072f351';
 export const CALENDAR_INTERACTION_LOGIC_FUNCTION_UNIVERSAL_IDENTIFIER =
