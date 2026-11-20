@@ -50,20 +50,6 @@ describe('default role', () => {
       });
     }
 
-    expect(defaultRole.config?.objectPermissions).toHaveLength(9);
-  });
-
-  it('grants write access to notes and note targets for timeline bumps', () => {
-    for (const objectUniversalIdentifier of [
-      STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.note.universalIdentifier,
-      STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.noteTarget.universalIdentifier,
-    ]) {
-      expect(permissionFor(objectUniversalIdentifier)).toMatchObject({
-        canReadObjectRecords: true,
-        canUpdateObjectRecords: true,
-        canSoftDeleteObjectRecords: false,
-        canDestroyObjectRecords: false,
-      });
-    }
+    expect(defaultRole.config?.objectPermissions).toHaveLength(7);
   });
 });

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9.1
+
+- Manual bumps only update the Last contact metadata (Last contact, Last outbound, Last contact by and Last contact method); they no longer create a timeline note.
+
 ## 1.9.0
 
 - Manual bumps now add a note to the person's timeline with the selected contact method and the exact bump date and time, next to updating the Last contact fields.
