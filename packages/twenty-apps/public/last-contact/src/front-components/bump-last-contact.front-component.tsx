@@ -14,8 +14,8 @@ import {
   type LastContactMethod,
 } from 'src/constants/last-contact-method';
 import { BUMP_LAST_CONTACT_FRONT_COMPONENT_UNIVERSAL_IDENTIFIER } from 'src/constants/universal-identifiers';
+import { bumpLastContact } from 'src/utils/bump-last-contact';
 import {
-  buildBumpLastContactData,
   readLastContactMethod,
   resolveWorkspaceMemberId,
 } from 'src/utils/bump-last-contact-data';
@@ -79,18 +79,11 @@ const BumpLastContact = () => {
         throw new Error('Workspace member not found');
       }
 
-      await client.mutation({
-        updatePerson: {
-          __args: {
-            id: recordId,
-            data: buildBumpLastContactData({
-              bumpedAt: new Date().toISOString(),
-              method,
-              workspaceMemberId,
-            }),
-          },
-          id: true,
-        },
+      await bumpLastContact(client, {
+        recordId,
+        bumpedAt: new Date().toISOString(),
+        method,
+        workspaceMemberId,
       });
 
       enqueueSnackbar({

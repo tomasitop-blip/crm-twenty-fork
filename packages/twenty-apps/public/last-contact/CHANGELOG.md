@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9.0
+
+- Manual bumps now add a note to the person's timeline with the selected contact method and the exact bump date and time, next to updating the Last contact fields.
+
 ## 1.8.0
 
 - Add a **Bump last contact** widget to the People record page. Pick Text, Email, WhatsApp or Call, then bump: Last contact and Last outbound move to now, Last contact by becomes the acting teammate, and the new Last contact method field records the channel. Manual bumps are future-dated relative to older synced emails and meetings, so later syncs do not overwrite them.

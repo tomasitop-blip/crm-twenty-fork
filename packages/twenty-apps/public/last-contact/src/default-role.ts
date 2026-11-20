@@ -26,6 +26,8 @@ export default defineApplicationRole({
       STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.person.universalIdentifier,
       STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.company.universalIdentifier,
       STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.opportunity.universalIdentifier,
+      STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.note.universalIdentifier,
+      STANDARD_OBJECT_UNIVERSAL_IDENTIFIERS.noteTarget.universalIdentifier,
     ].map((objectUniversalIdentifier) => ({
       objectUniversalIdentifier,
       canReadObjectRecords: true,
